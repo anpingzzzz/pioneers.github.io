@@ -1,0 +1,242 @@
+<html lang = 'en'>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Pioneers</title>
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/jquery.bxslider.css">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+  <link rel="stylesheet" type="text/css" href="css/demo.css"/>
+  <link rel="stylesheet" type="text/css" href="css/set1.css"/>
+  <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+  <link href="css/overwrite.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <style>
+    .modal-backdrop {
+        z-index: -1;
+        height: 0px;
+      }
+  </style>
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target=".navbar-collapse.collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="pioneers.html">
+                    <img src="figure/Tsinghua_University_Logo.png" alt="logo" width="60px" height="60px" style=" margin-top: -15px;"/>
+                </a>
+            </div>
+            <!-- </div> -->
+            <div class="navbar-collapse collapse">
+                <div class="menu">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li><a href="pioneers.html#overview"><font>Paper Link</font></a></li>
+                        <li><a href="pioneers.html#paperlink"><font>Self-organizational Intervals</font></a></li>
+                        <li><a href="pioneers.html#intervals"><font>Grid Simulation</font></a></li>
+                        <li><a href="pioneers.html#data"><font>Data & Code</font></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <br><br><br><br>
+    
+    <div class="w3-content w3-display-container">
+        <div class="w3-display-container mySlides">
+            <img src="figure/首页.png" style="width:100%;width: 1000px;height: 500px">
+        </div>
+    
+        <div class="w3-display-container mySlides">
+            <img src="figure/paper_figures/figure3.png" style="width:100%;width: 1000px;height: 500px">
+        </div>
+
+        <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+    
+    </div>
+
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+    
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+    
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = x.length
+            }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex - 1].style.display = "block";
+        }
+    </script>
+
+    <div class="container" id="overview" >
+        <br>
+        <h1 id="sample-markdown">Optimising self-organised volunteer efforts in response to the COVID-19 pandemic</h1>
+        <p>Crowdsource volunteering efforts have contributed significantly to pandemic response and
+            recovery during the COVID-19 outbreak. In such efforts, individual volunteers can collaborate
+            to achieve rapid mobilisation toward emergent community demands. In this study, we
+            quantitively study this phenomenon using the concept of self-organisation, by proposing a
+            data-driven framework to investigate when and how self-organisation emerged during the
+            pandemic response and how it relates to effectiveness of volunteer organisations in general.
+            Using activity data collected from a mobile volunteer platform in Shenzhen ('Anti-Pandemic Pioneers'), China, we found
+            that volunteers' task participation and social and task preferences show multiple phases of
+            self-organisation in response to changing epidemic situations and centralised interventions.
+            Simulation experiments further show that the self-organised volunteer system can become
+            more responsive and more robust in the face of uncertain community demands with minimal
+            centralised guidance.</p>
+    </div>
+    <div class="container" id="paperlink">
+        <h2 id="second-heading">Paper Link</h2>
+        <p><a href="https://www.nature.com/articles/s41599-022-01127-2">Paper Link</a>, <a href="https://www.nature.com/articles/s41599-022-01127-2.pdf">PDF Link</a>
+            and <a href="https://static-content.springer.com/esm/art%3A10.1057%2Fs41599-022-01127-2/MediaObjects/41599_2022_1127_MOESM1_ESM.pdf">Supplementary Materials</a></p>
+    </div>
+
+    <div class="container" id="intervals">
+        <h2 id="second-heading">Self-organized Volunteer Behavior During the COVID-19 Outbreak in Shenzhen </h2> 
+
+        <p>NCEs and Self-organization intervals for three types of volunteer behaviors: <b>volunteer participation rate</b>, <b>organizer choices</b>, 
+            and <b>an organizer's task choice</b>. Darker shading indicates higher organizational speed, which characterises the rate of NCE decrease after the peak.</p>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="dropdown">
+                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Participation Rate NCE (P-NCE)
+                    <span class="caret"></span></button>
+                    <ul class="dropdown-menu" id="1">
+                    </ul>
+                </div><br>
+            </div>
+            <div class="col-md-4">
+                <div class="dropdown">
+                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Organizer Preference NCE (O-NCE)
+                    <span class="caret"></span></button>
+                    <ul class="dropdown-menu" id="2">
+                    </ul>
+                </div><br>
+            </div>
+            <div class="col-md-4">
+                <div class="dropdown">
+                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Task Preference NCE (T-NCE)
+                    <span class="caret"></span></button>
+                    <ul class="dropdown-menu" id="3">
+                    </ul>
+                </div><br>
+            </div>
+        </div>    
+    </div>
+
+    <div id="simulation" class="section sm-padding bg-grey main-section">
+        <div class="container">
+            <h2 id="second-heading">Grid Simulation</h2>
+            <p>This simulation implements a minimal volunteer crowdsource scenario that can exhibit self-organization 
+                effects in a controlled environment. The simulated environment is a 10-by-10 grid world, where each 
+                grid cell represents a task with a specific value. The task value measures a level of task importance 
+                and is set to change at frequency (<b>a.k.a. Grid Value Change Frequency</b>) to reflect the changing community
+                demand. Each grid represents an organized task. For simplicity, we assumed that all tasks needed the 
+                same number of people to complete. To prevent unbalanced volunteer allocation, each grid cell (task)
+                can be taken by at most 3 agents at a given time (The darker the grid has the more users joined into 
+                the task). At each time step of the simulation, agents representing individual volunteers can participate
+                in a task by moving to the corresponding cell. The collective goal of the agents is to participate in 
+                tasks that maximize combined values. We defined three task selection strategies based on different organizational
+                schemes in real-world crowdsourced systems: a self-organized scheme, a centralized scheme and a hybrid scheme. 
+                As in the real-world case where local community demands are difficult to learn precisely, a decision maker can
+                only observe a fraction of the task values (<b>a.k.a. the observable demand rate</b>) and assign agents optimally to
+                the observable tasks. Under the hybrid scheme, the system executes the centralized strategy for several time
+                steps (<b>a.k.a. Number of centralized Steps</b>) whenever the task value changes and then switches to the self-organized
+                strategy.</p>
+                <p><a href="http://8.129.175.102/#">Click here to create your own simulation!</a></p>
+            <ul>
+                <li><b>Parameters in the Simulation</b><ol>
+                <li><b>Scheme Type:</b> Three different organizational schemes in real-world crowdsourced systems</li>
+                <li><b>Number of Agents:</b> Number of Agents that allocated in the grid simulation</li>
+                <li><b>Observation Demand Rate:</b> The fraction that a decision maker can observe (NA under the self-organized scheme)</li>
+                <li><b>Grid Value Change Frequency:</b> The frequency of changing grid values every 100 time steps</li>
+                <li><b>Number of Centralized Steps:</b> The number of time steps that the system executes the centralized startely under the hybrid scheme</li>
+                </ul>
+        </div>
+    </div>
+    
+    <div id="data">
+        <div class="container">
+            <h2 id="second-heading">Data and Code</h2>
+            <p>Click <a href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/YUOOBB">here</a> to download data and code used in the paper.</p>
+        </div>
+    </div>
+</body>
+
+    <script>  
+        list = ["shenzhen", 'futian', 'baoan','pingshan','guangming','luohu','nanshan','yantian','longgang']
+        nce_type = ['pnce','once','tnce']
+        for(var i=0;i<3;i++){
+            let ul = document.getElementById((i+1).toString())
+            for(var j=0;j<=8;j++){
+                let p = document.createElement("div");
+                p.id = list[j]+'_'+nce_type[i];
+                p.className = "modal fade"
+                p.tabIndex = "-1";
+                p.setAttribute("role", "dialog");
+                p.setAttribute("aria-labelledby", "myModalLabel");
+                p.setAttribute("aria-hidden", "True");
+                let div2 = document.createElement('div');
+                div2.className = "modal-dialog";
+                let div3 = document.createElement('div');
+                div3.className = "modal-content";
+                let img = document.createElement('img');
+                img.src = "res_jpg/" + list[j]+'_'+nce_type[i]+".jpg";
+                img.style = "width:100%"
+                let li = document.createElement("li");
+                let a = document.createElement("a");
+                a.setAttribute("data-toggle", "modal");
+                a.innerHTML = list[j];
+                a.setAttribute("data-target", '#'+list[j]+'_'+nce_type[i])
+                ul.appendChild(li);
+                li.appendChild(a);
+                document.body.appendChild(p);
+                p.appendChild(div2)
+                div2.appendChild(div3)
+                div3.appendChild(img)
+            }
+        }   
+    </script>
+
+    <footer>
+        <div class="last-div">
+            <div class="container">
+                <div class="row">
+                    <div class="copyright">
+                        © 2022 Tsinghua University</a>
+                    </div>
+                </div>
+            </div>
+    
+            <a href="" class="scrollup"><i class="fa fa-chevron-up"></i></a>
+        </div>
+    </footer>
+</html>
