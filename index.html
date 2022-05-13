@@ -26,6 +26,9 @@
       }
   </style>
 </head>
+
+$("html,body").animate({scrollTop: $("#box").offset().top}, 1000);
+
 <body>
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="container">
@@ -46,11 +49,11 @@
             <div class="navbar-collapse collapse">
                 <div class="menu">
                     <ul class="nav nav-tabs" role="tablist">
-                        <li><a href="index.html#abstract"><font>About</font></a></li>
-                        <li><a href="index.html#paperlink"><font>Paper Link</font></a></li>
-                        <li><a href="index.html#intervals"><font>Self-organizational Intervals</font></a></li>
-                        <li><a href="index.html#simulation"><font>Volunteer Simulation</font></a></li>
-                        <li><a href="index.html#data"><font>Data & Code</font></a></li>
+                        <li><a href="index.html#abstract" class="smooth"><font>About</font></a></li>
+                        <li><a href="index.html#paperlink" class="smooth"><font>Paper Link</font></a></li>
+                        <li><a href="index.html#intervals" class="smooth"><font>Self-organizational Intervals</font></a></li>
+                        <li><a href="index.html#simulation" class="smooth"><font>Volunteer Simulation</font></a></li>
+                        <li><a href="index.html#data" class="smooth"><font>Data & Code</font></a></li>
                     </ul>
                 </div>
             </div>
@@ -61,11 +64,11 @@
 
     <div class="w3-content w3-display-container">
         <div class="w3-display-container mySlides">
-            <img src="figure/首页.png" style="width:100%;width: 1000px;height: 420px">
+            <img src="figure/首页.png" style="width:100%;width: 1000px;height: 430px">
         </div>
     
         <div class="w3-display-container mySlides">
-            <img src="figure/paper_figures/figure3.png" style="width:100%;width: 1000px;height: 420px">
+            <img src="figure/paper_figures/figure3.png" style="width:100%;width: 1000px;height: 430px">
         </div>
 
         <!-- <div class="w3-display-container mySlides">
@@ -73,7 +76,7 @@
         </div> -->
 
         <div class="w3-display-container mySlides">
-            <img src="figure/paper_figures/figure5.png" style="width:100%;width: 1000px;height: 420px">
+            <img src="figure/paper_figures/figure5.png" style="width:100%;width: 1000px;height: 430px">
         </div>
 
         <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
@@ -108,14 +111,14 @@
     <div class = "container">
         <h1>Optimising self-organised volunteer efforts in response to the COVID-19 pandemic</h1>
         <p style="text-align: center;" id="abstract">
-           Anping Zhang<sup>*</sup>, Ke Zhang<sup>*</sup>, Wanda Li, Yue Wang, Yang Li<sup><a href = "mailto: yangli@sz.tsinghua.edu.cn"><img src="figure/email_logo.jpg" style ="width: 20px;height: 15px"></a></sup>, Lin Zhang<br><br>
+           Anping Zhang<sup>*</sup>, Ke Zhang<sup>*</sup>, Wanda Li, Yue Wang, <a href="http://yangli-feasibility.com/home/">Yang Li</a><sup><a href = "mailto: yangli@sz.tsinghua.edu.cn"><img src="figure/email_logo.jpg" style ="width: 20px;height: 15px"></a></sup>, Lin Zhang<br><br>
            <sup><img src="figure/email_logo.jpg" style ="width: 20px;height: 15px"></sup>email: <a href = "mailto: yangli@sz.tsinghua.edu.cn">yangli@sz.tsinghua.edu.cn</a> &nbsp; &nbsp;  * These authors contributed equally
         </p> 
     </div>
     <div class="container">
         <br>
         <h3 id="paperlink"><b>About</b></h3>
-        <p>Crowdsource volunteering efforts have contributed significantly to pandemic response and
+        <p style ="text-align: justify;">Crowdsource volunteering efforts have contributed significantly to pandemic response and
             recovery during the COVID-19 outbreak. In such efforts, individual volunteers can collaborate
             to achieve rapid mobilisation toward emergent community demands. In this study, we
             quantitively study this phenomenon using the concept of self-organisation, by proposing a
@@ -156,14 +159,14 @@
             <li>News from Tsinghua-Berkerley Shenzhen Institute (In <a href="https://www.tbsi.edu.cn/2022/0420/c3669a53502/page.htm"> Chinese</a> and <a href="https://www.tbsi.edu.cn/english/2022/0420/c3752a53498/page.htm">English</a>)</li>
         </ul>
     </div>
-    <div class="container">
+    <div class="container" style ="text-align: justify;">
         <h3 id="second-heading"><b>Self-organized Volunteer Behavior During the COVID-19 Outbreak in Shenzhen </b></h3> 
         
         <ul>
             <li>NCEs and Self-organization intervals for three types of volunteer behaviors: <ol>
-            <li>participation rate <b>(P-NCE)</b></li>
-            <li>organizer choices <b>(O-NCE)</b></li>
-            <li>an organizer's task choice <b>(T-NCE)</b></li>
+            <li>Participation rate <b>(P-NCE)</b></li>
+            <li>Organizer choices <b>(O-NCE)</b></li>
+            <li>An organizer's task choice <b>(T-NCE)</b></li>
         </ul>
 <!-- 
         <p>NCEs and Self-organization intervals for three types of volunteer behaviors: 
@@ -236,13 +239,13 @@
                 strategy.</p> -->
                 <ul><li><a href="http://8.129.175.102/#">Click here to view the interactive simulation!</a></ol></ul>
                 <!-- <p><a href="http://8.129.175.102/#">Click here to view the interactive simulation!</a></p> -->
-            <ul>
+            <ul style ="text-align: justify;">
                 <li><b>Parameters in the Simulation</b><ol>
                 <li><b>Scheme Type:</b> Three different organizational schemes in real-world crowdsourced systems</li>
                 <li><b>Number of Agents:</b> Number of Agents that allocated in the grid simulation</li>
                 <li><b>Observation Demand Rate:</b> The fraction that a decision maker can observe (NA under the self-organized scheme)</li>
                 <li><b>Grid Value Change Frequency:</b> The frequency of changing grid values every 100 time steps. Each grid has been initialized by a random value within 5, when 
-                the grid value changes, the corresponding columns will increase by 5.</li>
+                the grid value changes, the corresponding columns will increase by 5</li>
                 <li><b>Number of Centralized Steps:</b> The number of time steps that the system executes the centralized startely under the hybrid scheme</li>
             </ul>
         </div>
