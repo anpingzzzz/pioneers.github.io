@@ -39,16 +39,17 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="index.html">
-                    <img src="figure/Tsinghua_University_Logo.png" alt="logo" width="60px" height="60px" style=" margin-top: -15px;"/>
+                    <img src="figure/Tsinghua_University_Logo.png" alt="logo" width="55px" height="55px" style=" margin-top: -10px;"/>
                 </a>
             </div>
             <!-- </div> -->
             <div class="navbar-collapse collapse">
                 <div class="menu">
                     <ul class="nav nav-tabs" role="tablist">
-                        <li><a href="index.html#overview"><font>Paper Link</font></a></li>
-                        <li><a href="index.html#paperlink"><font>Self-organizational Intervals</font></a></li>
-                        <li><a href="index.html#intervals"><font>Grid Simulation</font></a></li>
+                        <li><a href="index.html#abstract"><font>About</font></a></li>
+                        <li><a href="index.html#paperlink"><font>Paper Link</font></a></li>
+                        <li><a href="index.html#intervals"><font>Self-organizational Intervals</font></a></li>
+                        <li><a href="index.html#simulation"><font>Volunteer Simulation</font></a></li>
                         <li><a href="index.html#data"><font>Data & Code</font></a></li>
                     </ul>
                 </div>
@@ -57,7 +58,7 @@
     </nav>
     
     <br><br><br><br>
-    
+
     <div class="w3-content w3-display-container">
         <div class="w3-display-container mySlides">
             <img src="figure/首页.png" style="width:100%;width: 1000px;height: 420px">
@@ -67,9 +68,9 @@
             <img src="figure/paper_figures/figure3.png" style="width:100%;width: 1000px;height: 420px">
         </div>
 
-        <div class="w3-display-container mySlides">
+        <!-- <div class="w3-display-container mySlides">
             <img src="figure/paper_figures/figure4.png" style="width:80%;width: 1000px;height: 420px">
-        </div>
+        </div> -->
 
         <div class="w3-display-container mySlides">
             <img src="figure/paper_figures/figure5.png" style="width:100%;width: 1000px;height: 420px">
@@ -100,13 +101,20 @@
             for (i = 0; i < x.length; i++) {
                 x[i].style.display = "none";
             }
-            x[slideIndex - 1].style.display = "block";
+            x[slideIndex - 1].style.display = "block";  
         }
     </script>
 
-    <div class="container" id="overview" >
+    <div class = "container">
+        <h1>Optimising self-organised volunteer efforts in response to the COVID-19 pandemic</h1>
+        <p style="text-align: center;" id="abstract">
+           Anping Zhang<sup>*</sup>, Ke Zhang<sup>*</sup>, Wanda Li, Yue Wang, Yang Li<sup><a href = "mailto: yangli@sz.tsinghua.edu.cn"><img src="figure/email_logo.jpg" style ="width: 20px;height: 15px"></a></sup>, Lin Zhang<br><br>
+           <sup><img src="figure/email_logo.jpg" style ="width: 20px;height: 15px"></sup>email: <a href = "mailto: yangli@sz.tsinghua.edu.cn">yangli@sz.tsinghua.edu.cn</a> &nbsp; &nbsp;  * These authors contributed equally
+        </p> 
+    </div>
+    <div class="container">
         <br>
-        <h1 id="sample-markdown">Optimising self-organised volunteer efforts in response to the COVID-19 pandemic</h1>
+        <h3 id="paperlink"><b>About</b></h3>
         <p>Crowdsource volunteering efforts have contributed significantly to pandemic response and
             recovery during the COVID-19 outbreak. In such efforts, individual volunteers can collaborate
             to achieve rapid mobilisation toward emergent community demands. In this study, we
@@ -120,23 +128,56 @@
             more responsive and more robust in the face of uncertain community demands with minimal
             centralised guidance.</p>
     </div>
-    <div class="container" id="paperlink">
-        <h2 id="second-heading">Paper Link</h2>
-        <p><a href="https://www.nature.com/articles/s41599-022-01127-2">Paper Link</a>, <a href="https://www.nature.com/articles/s41599-022-01127-2.pdf">PDF Link</a>
-            and <a href="https://static-content.springer.com/esm/art%3A10.1057%2Fs41599-022-01127-2/MediaObjects/41599_2022_1127_MOESM1_ESM.pdf">Supplementary Materials</a></p>
+    <div class="container">
+        <h3 id="media_links"><b>Paper and Media Links</b></h3>
+        <ul><li><a href="https://www.nature.com/articles/s41599-022-01127-2">Paper Link</a></ol></ul>
+        <ul><li><a href="https://www.nature.com/articles/s41599-022-01127-2.pdf">PDF Link</a></ol></ul>
+        <ul><li><a href="https://static-content.springer.com/esm/art%3A10.1057%2Fs41599-022-01127-2/MediaObjects/41599_2022_1127_MOESM1_ESM.pdf">Supplementary Materials</a></ol></ul>
+        <!-- <p><a href="https://www.nature.com/articles/s41599-022-01127-2">Paper Link</a>, <a href="https://www.nature.com/articles/s41599-022-01127-2.pdf">PDF Link</a>
+            and <a href="https://static-content.springer.com/esm/art%3A10.1057%2Fs41599-022-01127-2/MediaObjects/41599_2022_1127_MOESM1_ESM.pdf">Supplementary Materials</a></p> -->
+        
+        <ul><li><a href="https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=Optimising+self-organised+volunteer+efforts+in+response+to+the+COVID-19+pandemic&btnG=">Cite</a> our paper if you find it is interesting<ol></ul>
+        
+        <pre><code>@article{zhang2022optimising,
+        <span class="hljs-attr">title={Optimising</span> self-organised volunteer efforts <span class="hljs-keyword">in</span> response to the COVID-<span class="hljs-number">19</span> pandemic},
+        <span class="hljs-attr">author={Zhang,</span> Anping <span class="hljs-literal">and</span> Zhang, Ke <span class="hljs-literal">and</span> Li, Wanda <span class="hljs-literal">and</span> Wang, Yue <span class="hljs-literal">and</span> Li, Yang <span class="hljs-literal">and</span> Zhang, Lin},
+        <span class="hljs-attr">journal={Humanities</span> <span class="hljs-literal">and</span> Social Sciences Communications},
+        <span class="hljs-attr">volume={9},</span>
+        <span class="hljs-attr">number={1},</span>
+        <span class="hljs-attr">pages={1--12},</span>
+        <span class="hljs-attr">year={2022},</span>
+        <span class="hljs-attr">publisher={Palgrave}</span>
+        }
+        </code></pre>
+        
+        <ul id="intervals">
+            <li>Media Links:<ol>
+            <li><a href="https://www.tsinghua.edu.cn/info/1175/93252.htm"> News from Tsinghua University (In Chinese)</a></li>
+            <li>News from Tsinghua Shenzhen International Graduate School (In <a href="https://www.sigs.tsinghua.edu.cn/2022/0419/c1209a53456/page.htm">Chinese</a> and <a href = "https://www.sigs.tsinghua.edu.cn/en/2022/0421/c2581a53517/page.htm">English</a>)</li>
+            <li>News from Tsinghua-Berkerley Shenzhen Institute (In <a href="https://www.tbsi.edu.cn/2022/0420/c3669a53502/page.htm"> Chinese</a> and <a href="https://www.tbsi.edu.cn/english/2022/0420/c3752a53498/page.htm">English</a>)</li>
+        </ul>
     </div>
-    <div class="container" id="intervals">
-        <h2 id="second-heading">Self-organized Volunteer Behavior During the COVID-19 Outbreak in Shenzhen </h2> 
-        <p>NCEs and Self-organization intervals for three types of volunteer behaviors: 
-            <li>participation rate <b>(P-NCE)</b></ol> 
-            <li>organizer choices <b>(O-NCE)</b></ol> 
+    <div class="container">
+        <h3 id="second-heading"><b>Self-organized Volunteer Behavior During the COVID-19 Outbreak in Shenzhen </b></h3> 
+        
+        <ul>
+            <li>NCEs and Self-organization intervals for three types of volunteer behaviors: <ol>
+            <li>participation rate <b>(P-NCE)</b></li>
+            <li>organizer choices <b>(O-NCE)</b></li>
             <li>an organizer's task choice <b>(T-NCE)</b></li>
-        Darker shading indicates higher organizational speed, which characterises the rate of NCE decrease after the peak.</p>
+        </ul>
+<!-- 
+        <p>NCEs and Self-organization intervals for three types of volunteer behaviors: 
+            <li>participation rate <b>(P-NCE)</b></li> 
+            <li>organizer choices <b>(O-NCE)</b></li> 
+            <li>an organizer's task choice <b>(T-NCE)</b></li> -->
+        <ul><li>Darker shading indicates higher organizational speed, which characterises the rate of NCE decrease after the peak.</ol></ul>
+        <!-- <ul>Darker shading indicates higher organizational speed, which characterises the rate of NCE decrease after the peak.</ol></ul> -->
         <p style="text-align: center;">
             <img src="figure/paper_figures/intervals.png" alt="Pulpit rock" width="1100" height="350">
             <p style="text-align: center;"><b>Self-organised volunteer behaviour during the COVID-19 outbreak in Shenzhen</b></p>
         </p>
-        <p style="text-align: center;">
+        <p  id="simulation" style="text-align: center;">
             Click the following dropdown buttons to visualize details in Shenzhen and its districts.
         </p>     
         <div class="row">
@@ -169,8 +210,11 @@
 
     <div id="simulation" class="section sm-padding bg-grey main-section">
         <div class="container">
-            <h2 id="second-heading">Grid Simulation</h2>
-            <p style="text-align: center;">This simulation implements a minimal volunteer crowdsource scenario that can exhibit self-organization effects in a controlled environment.</p>
+            <h3 id="second-heading"><b>Simulation of Volunteers' Task Selection Behavior</b></h3>
+
+            <ul><li>This simulation implements a minimal volunteer crowdsource scenario that can exhibit self-organization effects in a controlled environment.</ol></ul>
+            <!-- <p style="text-align: center;">This simulation implements a minimal volunteer crowdsource scenario that can exhibit self-organization effects in a controlled environment.</p> -->
+
             <p style="text-align: center;">
                 <img src="figure/paper_figures/simulation.png" alt="Pulpit rock" width="450" height="450">
                 <p style="text-align: center;"><b>Schematic diagram of a simplified version 3-by-3 grid simulation</b></p>
@@ -191,7 +235,8 @@
                 the observable tasks. Under the hybrid scheme, the system executes the centralized strategy for several time
                 steps (<b>a.k.a. Number of centralized Steps</b>) whenever the task value changes and then switches to the self-organized
                 strategy.</p> -->
-                <p><a href="http://8.129.175.102/#">Click here to create your own simulation!</a></p>
+                <ul><li><a href="http://8.129.175.102/#">Click here to view the interactive simulation!</a></ol></ul>
+                <!-- <p><a href="http://8.129.175.102/#">Click here to view the interactive simulation!</a></p> -->
             <ul>
                 <li><b>Parameters in the Simulation</b><ol>
                 <li><b>Scheme Type:</b> Three different organizational schemes in real-world crowdsourced systems</li>
@@ -200,14 +245,15 @@
                 <li><b>Grid Value Change Frequency:</b> The frequency of changing grid values every 100 time steps. Each grid has been initialized by a random value within 5, when 
                 the grid value changes, the corresponding columns will increase by 5.</li>
                 <li><b>Number of Centralized Steps:</b> The number of time steps that the system executes the centralized startely under the hybrid scheme</li>
-                </ul>
+            </ul>
         </div>
     </div>
     
     <div id="data">
         <div class="container">
-            <h2 id="second-heading">Data and Code</h2>
-            <p>Click <a href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/YUOOBB">here</a> to download data and code used in the paper.</p>
+            <h3 id="second-heading"><b>Data and Code</b></h3>
+            <ul><li>Click <a href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/YUOOBB">here</a> to download data and code used in the paper.</ol></ul>
+            <!-- <p>Click <a href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/YUOOBB">here</a> to download data and code used in the paper.</p> -->
         </div>
     </div>
 </body>
